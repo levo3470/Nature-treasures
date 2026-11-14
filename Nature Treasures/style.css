@@ -1,0 +1,146 @@
+body {
+    background-color: #F3EEE3;
+}
+
+.navbar {
+    background-color: #111111;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: -8px;
+    padding: 10px 20px;
+    gap: 10px;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 10px 10px;
+    background-color:  #222222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navbar ul li a:hover {
+    background-color:  transparent;
+    color: #ccc;
+    box-shadow: 0 0 0 2px #D9541E;
+}
+
+.headline {
+    text-align: center;
+    margin-left: 400px;
+    margin-top: -60px;
+}
+
+.headline h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.chamomile-image {
+    margin-top: 200px;
+    margin-left: 900px;
+}
+
+.chamomile-image img {
+    height: 500px;
+    animation: gentle-drift 4s ease-in-out infinite;
+}
+
+.pumpkin-image {
+    margin-top: 80px;
+    margin-left: 300px;
+}
+
+.pumpkin-image img {
+    height: 300px;
+    animation: gentle-drift 4s ease-in-out infinite;
+}
+
+@keyframes gentle-drift {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(2px, 5px);
+    }
+
+    50% {
+        transform: translate(1, 2.5px);
+    }
+
+    75% {
+        transform: translate(-5px, -2px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .chamomile-image img,
+    .pumpkin-image img {
+        animation: none;
+    }
+}
+
+.headline2 {
+    text-align: center;
+    margin-top: -800px;
+    margin-left: -900px;
+}
+
+.headline2 h1 {
+    font-size: 66px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headline-slogan {
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: all 0.2s ease;
+}
+
+.headline-slogan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 2px #222222;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 450px;
+    margin-left: 500px;
+}
+
+.btn button {
+    padding: 20px 40px;
+    border-radius: 60px;
+    background-color: #111111;
+    border: 3px solid #D9541E;
+    box-shadow: none;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.btn button a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn button:hover {
+    box-shadow: 20px 10px #222222;
+    transform: scale(1.1);
+}
